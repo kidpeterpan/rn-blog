@@ -1,14 +1,23 @@
 import React,{useContext} from 'react';
-import {View, Text,StyleSheet} from 'react-native';
+import {View, Text,StyleSheet, FlatList,Button} from 'react-native';
 import BlogContext from '../context/BlogContext';
 
 
 
 const IndexScreen = () => {
-const value = useContext(BlogContext); // hook can only call from inside of component function
+    const {data, addBlogPost} = useContext(BlogContext); // hook can only call from inside of component function
+    
     return (
         <View>
-            <Text>IndexScreen value: {value} </Text>
+            <Button
+                title='Add Blog Post'
+                onPress={() => addBlogPost()}
+            />
+            <FlatList 
+                data={data}
+                keyExtractor={ blogPost => blogPost.title }
+                renderItem={({item}) => <Text>{item.title}</Text> }
+            />
         </View>
     );
 }
