@@ -1,7 +1,9 @@
-# rn-blog
+# React Native + Redux Blog
 
-- build redux from scatch with small project.
+<img src='https://pajaaleksic.com/wp-content/uploads/2019/08/1_Vnv5WxomJ4e6Agej8fiuTA-768x470.jpg'/>
 
-- understand CRUD action with react-native and redux.
+++ build **Redux** from scatch with small project.
 
-- new feature Hook! also used
+++ understand **CRUD** action with react-native and redux.
+
+++ new feature **Hook**! also used.
