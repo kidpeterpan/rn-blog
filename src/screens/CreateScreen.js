@@ -12,13 +12,13 @@ const CreateScreen = ({navigation}) => {
         <View>
             <Text style={styles.label}>Enter title:</Text>
             <TextInput
-                stye={styles.input} 
+                style={styles.input} 
                 value={title}
                 onChangeText={value => setTitle(value)}
             />
             <Text style={styles.label}>Enter content:</Text>
             <TextInput 
-                stye={styles.input}
+                style={styles.input}
                 value={content}
                 onChangeText={value => setContent(value)}
             />
