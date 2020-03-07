@@ -11,7 +11,7 @@ const ShowScreen = ({navigation}) => {
     return (
         <View>
             <Text>{blogPost.title}</Text>
-            <Text>This is Show Screen : {blogPost.id} </Text>
+            <Text>{blogPost.content}</Text>
         </View>
     );
 }
